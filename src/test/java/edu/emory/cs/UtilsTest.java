@@ -1,4 +1,4 @@
-package edu.emory.cs.utils;
+package edu.emory.cs;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;

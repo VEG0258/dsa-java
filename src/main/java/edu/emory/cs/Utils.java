@@ -1,4 +1,4 @@
-package edu.emory.cs.utils;
+package edu.emory.cs;
 
 public class Utils {
     static public int getMiddleIndex(int beginIndex, int endIndex) {
