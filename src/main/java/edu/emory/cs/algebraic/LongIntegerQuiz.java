@@ -12,7 +12,7 @@ public class LongIntegerQuiz extends LongInteger {
     @Override
     protected void addDifferentSign(LongInteger n) {
         int m = Math.max(digits.length, n.digits.length);
-        byte[] result = new byte[m];// not m + 1 because it is subtution
+        byte[] result = new byte[m + 1];
         //when digit is larger than n.digits
         if(digits.length > n.digits.length){
             System.arraycopy(digits, 0, result, 0, digits.length);
@@ -24,6 +24,8 @@ public class LongIntegerQuiz extends LongInteger {
                 }
                 result[i] -= n.digits[i];
             }
+
+
         } else if (digits.length < n.digits.length){ //when n.digits is larger than digits
             System.arraycopy(n.digits, 0, result, 0, n.digits.length);
 
@@ -34,30 +36,41 @@ public class LongIntegerQuiz extends LongInteger {
                 }
                 result[i] -= digits[i];
             }
+
+            this.flipSign();
+
         } else {
-            byte[] smaller = new byte[m];
-            for(int i = 0; i < digits.length; i++){
-                if(digits[i] > n.digits[i]){
-                    System.arraycopy(digits, 0, result, 0, digits.length);
-                    System.arraycopy(n.digits, 0, smaller, 0, n.digits.length);
-                    break;
-                } else if (digits[i] < n.digits[i]){
-                    System.arraycopy(n.digits, 0, result, 0, n.digits.length);
-                    System.arraycopy(digits, 0, smaller, 0, digits.length);
-                    break;
-                } else {
-                    System.arraycopy(digits, 0, result, 0, digits.length);
-                    System.arraycopy(n.digits, 0, smaller, 0, n.digits.length);
+            if(this.compareAbs(n) >= 0){ ////when digit is larger than n.digits
+                System.arraycopy(digits, 0, result, 0, digits.length);
+
+                for(int i = 0; i < n.digits.length; i++){
+                    if(result[i] < n.digits[i]){
+                        result[i] += 10;
+                        result[i + 1] -= 1;
+                    }
+                    result[i] -= n.digits[i];
                 }
-            }
-            for(int j = 0; j < smaller.length; j++){
-                if(result [j] < smaller[j]){
-                    result[j] += 10;
-                    result[j + 1] -= 1;
+            } else {
+                System.arraycopy(n.digits, 0, result, 0, n.digits.length);
+
+                for(int i = 0; i < digits.length; i++){
+                    if(result [i] < digits[i]){
+                        result[i] += 10;
+                        result[i + 1] -= 1;
+                    }
+                    result[i] -= digits[i];
                 }
-                result[j] -= smaller[j];
+
+                this.flipSign();
             }
         }
-        digits = result[m] == 0 ? Arrays.copyOf(result, m) : result;
+        int count = 0;
+        for(int i = m; i > 0; i--){
+            if(result [i] == 0) {
+                count += 1;
+            }
+        }
+        digits = Arrays.copyOf(result, m - count + 1);
     }
 }
+
