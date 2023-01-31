@@ -64,13 +64,13 @@ public class LongIntegerQuiz extends LongInteger {
                 this.flipSign();
             }
         }
-        int count = 0;
         for(int i = m; i > 0; i--){
             if(result [i] == 0) {
-                count += 1;
+                digits = Arrays.copyOf(result, i);
+            } else {
+                break;
             }
         }
-        digits = Arrays.copyOf(result, m - count + 1);
     }
 }
 
