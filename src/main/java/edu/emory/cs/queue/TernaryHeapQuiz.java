@@ -72,18 +72,6 @@ public class TernaryHeapQuiz<T extends Comparable<T>> extends AbstractPriorityQu
             Collections.swap(keys, k, i);
         }
     }
-    public static void main(String[] args) {
-        TernaryHeapQuiz<Integer> a = new TernaryHeapQuiz<>();
-        int[] test = {24, 47, 46, -51, 9, -16, -7, -7, 61, -11, 46, 60, -15};
-        for (int i = 1;i<=test.length;i++) {
-            a.add(test[i - 1]);
-            System.out.println(a.keys);
-
-        }
-        //System.out.println(a.keys);
-        a.remove();
-        System.out.println(a.keys);
-    }
 
     @Override
     public int size() {
