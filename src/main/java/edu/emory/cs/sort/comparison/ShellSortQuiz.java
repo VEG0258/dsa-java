@@ -48,19 +48,5 @@ public class ShellSortQuiz<T extends Comparable<T>> extends ShellSort<T> {
         if (index == sequence.size()) index--;
         return index;
     }
-
-    public static void main(String[] args) {
-        // create an instance of ShellSortQuiz with natural ordering
-        ShellSortQuiz<Integer> sorter = new ShellSortQuiz<>();
-
-        // create an array of integers to sort
-        Integer[] array = {5, 2, 7, 1, 9, 3, 34, 234, 4, 13, 15 ,35, 46, 56, 231, 12, 24, 53, 56, 33};
-
-        // sort the array using Shell sort
-        sorter.sort(array);
-
-        // print the sorted array
-        System.out.println(Arrays.toString(array));
-    }
 }
 
