@@ -35,7 +35,8 @@ public class RadixSortQuiz extends RadixSort {
         if(endIndex - beginIndex <= 1){
             return;
         }
-        int div = (int)Math.pow(10, maxBit - 1 - digits);
+        int div = (int)Math.pow(10, maxBit - digits - 1);
+        //catch edge case cause when digits is 0, then div is 0, 0 can not be a denominator(will fail the test)
         if(div == 0){
             return;
         }
@@ -46,8 +47,8 @@ public class RadixSortQuiz extends RadixSort {
         int i = beginIndex;
         int j = i + 1;
         while(j <= endIndex){
-            if(j == endIndex || (array[i]/div) % 10 != (array[j]/div) % 10){
-                if(array[i]/div == 0) sort(array, i, j, digits);
+            if(j == endIndex || ((array[i]/div) % 10) != ((array[j]/div) % 10)){
+                if(array[i]/div == 0) sort(array, i, j, digits); //to catch edge case
                 else sort(array, i, j, digits + 1);
                 i = j;
             }
