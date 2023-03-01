@@ -27,8 +27,8 @@ import java.util.*;
  */
 public class HybridSortHW<T extends Comparable<T>> implements HybridSort<T> {
 
-    private AbstractSort<T> engine1 = new ShellSortKnuth<>();
-    private IntroSort<T> engine2 = new IntroSort<>(new ShellSortKnuth<T>());
+    private final AbstractSort<T> engine1 = new ShellSortKnuth<>();
+    private final IntroSort<T> engine2 = new IntroSort<>(new ShellSortKnuth<T>());
 
     @Override
     public T[] sort(T[][] input) {
@@ -51,40 +51,32 @@ public class HybridSortHW<T extends Comparable<T>> implements HybridSort<T> {
             double ratio = count * 1.0 / (input[i].length - 1 - same);
             //ascending & Partially asscending
             if(ratio > 0.5){
-                if(ratio == 1){
-                    //null
-                } else {
+                if(ratio != 1){
                     engine1.sort(input[i]);
                 }
             }else if(ratio < -0.5){ //descending & Partially descending
                 Collections.reverse(Arrays.asList(input[i]));
-                if(ratio == -1){
-                    //null
-                } else {
+                if(ratio != -1){
                     engine1.sort(input[i]);
                 }
             } else {//random
                 engine2.sort(input[i]);
             }
         }
-        return mergeSort(input);
+        Class<?> classtype = input[0][0].getClass();
+        return mergeSort(input, 0, input.length - 1, classtype);
     }
 
     @SuppressWarnings("unchecked")
-    private T[] mergeSort(T[][] input){
-        Class<?> classtype = input[0][0].getClass();
-
-        Queue<T[]> result = new ArrayDeque<>(Arrays.asList(input));
-
-        while(result.size() > 1){
-            T[] sub1 = result.poll();
-            T[] sub2 = result.poll();
-            T[] sub3 = merge(sub1, sub2, classtype);
-            result.add(sub3);
+    private T[] mergeSort(T[][] input, int beginIndex, int endIndex, Class<?> classtype){
+        if (endIndex - beginIndex == 0) {
+            return input[beginIndex];
+        } else if (endIndex - beginIndex == 1) {
+            return merge(input[beginIndex], input[endIndex], classtype);
+        } else {
+            int mid = (beginIndex + endIndex) / 2;
+            return merge(mergeSort(input, beginIndex, mid, classtype), mergeSort(input, mid + 1, endIndex, classtype), classtype);
         }
-
-        return result.poll();
-
     }
 
     private T[] merge(T[] input1, T[] input2, Class<?> classtype) {
