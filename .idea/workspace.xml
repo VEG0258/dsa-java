@@ -5,8 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09553436-84b9-449a-9bdf-3971be577491" name="Changes" comment="quiz2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/AbstractBinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/AbstractBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/BinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/AVLNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/AVLTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/AbstractBalancedBinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/BalancedBinarySearchTreeQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/RedBlackNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/RedBlackTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/TrieNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/TrieQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/Autocomplete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHWExtra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/tree/NodeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/tree/TreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/TrieQuizTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/TrieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/autocomplete/AutocompleteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/emory/cs/sort/hybrid/HybridSortHW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/sort/hybrid/HybridSortHW.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +92,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/sort" />
     </key>
   </component>
@@ -84,6 +108,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HybridSortTest.testRobustness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dsa-java.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.emory.cs.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.emory.cs.sort" />
+      <option name="MAIN_CLASS_NAME" value="edu.emory.cs.sort.HybridSortTest" />
+      <option name="METHOD_NAME" value="testRobustness" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,38 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongIntegerQuizTest.test10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dsa-java.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.emory.cs.algebraic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.emory.cs.algebraic" />
-      <option name="MAIN_CLASS_NAME" value="edu.emory.cs.algebraic.LongIntegerQuizTest" />
-      <option name="METHOD_NAME" value="test10" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LongIntegerQuizTest.test9" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dsa-java.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.emory.cs.algebraic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.emory.cs.algebraic" />
-      <option name="MAIN_CLASS_NAME" value="edu.emory.cs.algebraic.LongIntegerQuizTest" />
-      <option name="METHOD_NAME" value="test9" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LongIntegerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dsa-java.test" />
       <extension name="coverage">
@@ -150,13 +158,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TernaryHeapQuizTest.testRobustness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dsa-java.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.emory.cs.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.emory.cs.queue" />
+      <option name="MAIN_CLASS_NAME" value="edu.emory.cs.queue.TernaryHeapQuizTest" />
+      <option name="METHOD_NAME" value="testRobustness" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TernaryHeapQuiz" />
+        <item itemvalue="JUnit.TernaryHeapQuizTest.testRobustness" />
+        <item itemvalue="JUnit.HybridSortTest.testRobustness" />
         <item itemvalue="JUnit.LongIntegerQuizTest" />
         <item itemvalue="JUnit.LongIntegerTest" />
-        <item itemvalue="JUnit.LongIntegerQuizTest.test9" />
-        <item itemvalue="JUnit.LongIntegerQuizTest.test10" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +199,9 @@
       <workItem from="1676346343070" duration="75605000" />
       <workItem from="1677276521652" duration="599000" />
       <workItem from="1677291721745" duration="19152000" />
-      <workItem from="1677602680460" duration="28164000" />
+      <workItem from="1677602680460" duration="29460000" />
+      <workItem from="1677683826256" duration="35457000" />
+      <workItem from="1678654185426" duration="7829000" />
     </task>
     <task id="LOCAL-00001" summary="253">
       <created>1674498957918</created>
@@ -268,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677619922933</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="quiz2">
+      <created>1677644898858</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677644898858</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
