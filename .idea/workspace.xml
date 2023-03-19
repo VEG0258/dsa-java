@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09553436-84b9-449a-9bdf-3971be577491" name="Changes" comment="quiz2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/AbstractBinaryNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/AbstractBinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/BinaryNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/AVLNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/AbstractBalancedBinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/BalancedBinarySearchTreeQuiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/RedBlackNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree/balanced/RedBlackTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/Trie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/TrieNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/TrieQuiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/Autocomplete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHW.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHWExtra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/tree/NodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/tree/TreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/TrieQuizTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/TrieTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/autocomplete/AutocompleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/set/DisjointSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/set/DisjointSetQuiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +181,8 @@
       <workItem from="1677291721745" duration="19152000" />
       <workItem from="1677602680460" duration="29460000" />
       <workItem from="1677683826256" duration="35457000" />
-      <workItem from="1678654185426" duration="7829000" />
+      <workItem from="1678654185426" duration="10222000" />
+      <workItem from="1679019811573" duration="8933000" />
     </task>
     <task id="LOCAL-00001" summary="253">
       <created>1674498957918</created>
@@ -301,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677644898858</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="quiz2">
+      <created>1678669285110</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678669285110</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
