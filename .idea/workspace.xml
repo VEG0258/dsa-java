@@ -5,9 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09553436-84b9-449a-9bdf-3971be577491" name="Changes" comment="quiz2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/set/DisjointSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/set/DisjointSetQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/GraphQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/Subgraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/flow/FordFulkerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/flow/MaxFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/flow/NetworkFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/flow/NetworkFlowQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/flow/NetworkFlowQuizExtra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/path/AStar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/path/Dijkstra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/path/SPWiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTAllHW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTEdmonds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTKruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTPrim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTWordHW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/SpanningTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/country_names.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dict.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/word_vectors.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/GraphQuizTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/GraphTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/flow/FordFulkersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/path/PathDijkstraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/span/MSTAllHWTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/span/MinimumSpanningTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/country_names.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/dict.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/word_vectors.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHWExtra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie/autocomplete/AutocompleteHWExtra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/autocomplete/AutocompleteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/autocomplete/AutocompleteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,29 +88,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/veg/IdeaProjects/dsa-java/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph" />
+      <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph" />
       <recent name="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/trie" />
       <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/tree" />
-      <recent name="$PROJECT_DIR$/src/main/java/edu/emory/cs/sort" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +222,8 @@
       <workItem from="1677602680460" duration="29460000" />
       <workItem from="1677683826256" duration="35457000" />
       <workItem from="1678654185426" duration="10222000" />
-      <workItem from="1679019811573" duration="8933000" />
+      <workItem from="1679019811573" duration="9813000" />
+      <workItem from="1679254623634" duration="91919000" />
     </task>
     <task id="LOCAL-00001" summary="253">
       <created>1674498957918</created>
@@ -289,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678669285110</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="quiz2">
+      <created>1679203505005</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679203505005</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

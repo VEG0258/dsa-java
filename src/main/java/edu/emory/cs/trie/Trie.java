@@ -15,9 +15,6 @@
  */
 package edu.emory.cs.trie;
 
-/**
- * @author Jinho D. Choi ({@code jinho.choi@emory.edu})
- */
 public class Trie<T> {
     private final TrieNode<T> root;
 

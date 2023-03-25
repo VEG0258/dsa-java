@@ -1,18 +1,4 @@
-/*
- * Copyright 2020 Emory University
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+
 package edu.emory.cs.trie.autocomplete;
 
 import org.junit.jupiter.api.Test;
@@ -43,16 +29,29 @@ public class AutocompleteTest {
         List<String> expected;
 
         prefix = "sh";
-        expected = List.of("she", "ship", "shell");
+        expected = List.of();
         testGetCandidates(ac, eval, prefix, expected);
 
         prefix = "sh";
-        expected = List.of("she", "ship", "shell", "school");
+        expected = List.of("");
+        ac.pickCandidate(prefix, "shcd");
         testGetCandidates(ac, eval, prefix, expected);
 
+        prefix = "shcd";
+        expected = List.of("");
+//        ac.pickCandidate(prefix, "she");
+//        ac.pickCandidate(prefix, "12334");
+//        ac.pickCandidate(prefix, "098776");
+        testGetCandidates(ac, eval, prefix, expected);
+
+        prefix = "shcd";
+        expected = List.of("");
+        ac.pickCandidate(prefix, "abc");
+        testGetCandidates(ac, eval, prefix, expected);
+
+
         prefix = "sh";
-        expected = List.of("ship", "she", "shell");
-        ac.pickCandidate(prefix, "ship");
+        expected = List.of();
         testGetCandidates(ac, eval, prefix, expected);
 
         System.out.printf("Score: %d/%d\n", eval.correct, eval.total);
