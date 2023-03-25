@@ -155,13 +155,5 @@ public class AutocompleteHWExtra extends Autocomplete<List<AutocompleteHWExtra.C
             given.add(newpick);
         }
         Collections.sort(given);
-
-        for(int j = 0; j < given.size(); j++){
-            System.out.print("round - " + j + ": ");
-            System.out.print("word: " + given.get(j).word + "; ");
-            System.out.print("frequencey: " + given.get(j).frequency + "; ");
-            System.out.print("time: " + given.get(j).lastAccessOrder + "; ");
-            System.out.println("");
-        }
     }
 }
