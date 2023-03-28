@@ -14,15 +14,59 @@
  * limitations under the License.
  */
 package edu.emory.cs.graph;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.List;
 
 /** @author Jinho D. Choi */
 public class GraphQuiz extends Graph {
     public GraphQuiz(int size) { super(size); }
     public GraphQuiz(Graph g) { super(g); }
 
+    private int res = 0;
+
+    private final List<Integer> list = new ArrayList<>();
+
+    private List<Deque<Edge>> outgoingEdges;
+
     /** @return the total number of cycles in this graph. */
     public int numberOfCycles() {
-        // TODO: to be updated
-        return 0;
+        outgoingEdges = getOutgoingEdges();
+        for (int idx = 0; idx < size(); ++idx) {
+            Iterator<Deque<Edge>> iterator = outgoingEdges.iterator();
+            label33: while (iterator.hasNext()) {
+                Deque<Edge> edges = iterator.next();
+                Iterator<Edge> edgeIterator = edges.iterator();
+                while (true) {
+                    Edge edge;
+                    do {
+                        if (!edgeIterator.hasNext()) {
+                            continue label33;
+                        }
+                        edge = edgeIterator.next();
+                    } while (edge.getSource() >= idx && edge.getTarget() >= idx);
+
+                    edges.remove(edge);
+                }
+            }
+            findCycle(idx, idx);
+        }
+
+        System.out.println(res);
+        return res;
+    }
+
+    private void findCycle(int start, int idx) {
+        list.add(idx);
+        Deque<Edge> edges = outgoingEdges.get(idx);
+        for (Edge edge : edges) {
+            if (start == edge.getTarget()) {
+                ++res;
+            } else if (!list.contains(edge.getTarget())) {
+                findCycle(start, edge.getTarget());
+            }
+        }
+        list.remove(list.size() - 1);
     }
 }
