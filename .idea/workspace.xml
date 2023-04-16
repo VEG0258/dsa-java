@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="09553436-84b9-449a-9bdf-3971be577491" name="Changes" comment="quiz2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/GraphQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/GraphQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/autocomplete/AutocompleteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/trie/autocomplete/AutocompleteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTAllHW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/emory/cs/graph/span/MSTAllHW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/span/MSTAllHWTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/emory/cs/graph/span/MSTAllHWTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/veg/IdeaProjects/dsa-java/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/veg/IdeaProjects/dsa-java/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
@@ -128,17 +128,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongIntegerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MSTAllHWTest.testCompleteGraphs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dsa-java.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.emory.cs.algebraic.*" />
+          <option name="PATTERN" value="edu.emory.cs.graph.span.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.emory.cs.algebraic" />
-      <option name="MAIN_CLASS_NAME" value="edu.emory.cs.algebraic.LongIntegerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="edu.emory.cs.graph.span" />
+      <option name="MAIN_CLASS_NAME" value="edu.emory.cs.graph.span.MSTAllHWTest" />
+      <option name="METHOD_NAME" value="testCompleteGraphs" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MSTAllHWTest.testCompleteGraphs" />
         <item itemvalue="Application.TernaryHeapQuiz" />
         <item itemvalue="JUnit.TernaryHeapQuizTest.testRobustness" />
         <item itemvalue="JUnit.HybridSortTest.testRobustness" />
         <item itemvalue="JUnit.LongIntegerQuizTest" />
-        <item itemvalue="JUnit.LongIntegerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +189,10 @@
       <workItem from="1677683826256" duration="35457000" />
       <workItem from="1678654185426" duration="10222000" />
       <workItem from="1679019811573" duration="9813000" />
-      <workItem from="1679254623634" duration="101378000" />
+      <workItem from="1679254623634" duration="102669000" />
+      <workItem from="1680197832273" duration="5064000" />
+      <workItem from="1680747153505" duration="1282000" />
+      <workItem from="1681086313283" duration="47061000" />
     </task>
     <task id="LOCAL-00001" summary="253">
       <created>1674498957918</created>
@@ -316,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679713734028</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="quiz2">
+      <created>1680047502937</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680047502937</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

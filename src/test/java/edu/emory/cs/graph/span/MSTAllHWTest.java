@@ -27,7 +27,7 @@ import java.util.*;
 public class MSTAllHWTest {
     @Test
     public void testCompleteGraphs() {
-        MSTAll gold = new MSTAllHW();
+        MSTAllHW gold = new MSTAllHW();
         long st, et;
 
         for (int i = 1; i < 10; i++) {
