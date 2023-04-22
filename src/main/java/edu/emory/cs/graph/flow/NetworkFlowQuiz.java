@@ -34,10 +34,10 @@ public class NetworkFlowQuiz {
      * @return a set of all augmenting paths between the specific source and target vertices in the graph.
      */
     public Set<Subgraph> getAugmentingPaths(Graph graph, int source, int target) {
-        int tmp = target;
+        int temp = target;
         target = source;
-        source = tmp;
-        List<Edge> first = graph.getIncomingEdges(tmp);
+        source = temp;
+        List<Edge> first = graph.getIncomingEdges(temp);
         boolean[] visited = new boolean[graph.size()];
 
         for (Edge edge : first) {
